@@ -135,8 +135,8 @@ class CashRegister:
             
     
     def apply_discount(self):        
-        self.total=self.total-self.discount
-        self.total=float(self.total)
+        self.total=float(self.total-self.discount)
+        self.total=self.total
         if self.total>0 :
             #self.discount=CashRegister.discount
             print(f"After the discount, the total comes to ${self.total}.")
